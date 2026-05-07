@@ -660,10 +660,6 @@ video {
   width: 100%;
 }
 
-.basis-\[\] {
-  flex-basis: ;
-}
-
 .basis-\[1\] {
   flex-basis: 1;
 }
@@ -690,10 +686,6 @@ video {
 
 .basis-\[2\%\] {
   flex-basis: 2%;
-}
-
-.basis-\[\%\] {
-  flex-basis: %;
 }
 
 .basis-\[1\%\] {
@@ -1432,4 +1424,54 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+
+.qty-toggle-btn {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: 9999px;
+    background-color: #273842;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+}
+
+.qty-toggle-icon {
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+
+.qty-toggle-btn:focus-visible {
+    outline: 2px solid #16a34a;
+    outline-offset: 2px;
+}
+
+.pdt-dlt-btn {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border: 0;
+    background: transparent;
+    color: #ef4444;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.pdt-dlt-icon {
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+.pdt-dlt-btn:focus-visible {
+    outline: 2px solid #16a34a;
+    outline-offset: 2px;
 }
