@@ -1,12 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer components {
+    .qty-toggle-btn {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        border-radius: 9999px;
+        background-color: #273842;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        line-height: 1;
+    }
 
+    .qty-toggle-icon {
+        width: 16px;
+        height: 16px;
+        pointer-events: none;
+    }
 
-@layer base {
-    .form-select {
-        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAABGdBTUEAALGPC/xhBQAAAQtJREFUOBG1lEEOgjAQRalbGj2OG9caOACn4ALGtfEuHACiazceR1PWOH/CNA3aMiTaBDpt/7zPdBKy7M/DCL9pGkvxxVp7KsvyJftL5rZt1865M+Ucq6pyyF3hNcI7Cuu+728QYn/JQA5yKaempxuZmQngOwEaYx55nu+1lQh8GIatMGi+01NwBcEmhxBqK4nAPZJ78K0KKFAJmR3oPp8+Iwgob0Oa6+TLoeCvRx+mTUYf/FVBGTPRwDkfLxnaSrRwcH0FWhNOmrkWYbE2XEicqgSa1J0LQ+aPCuQgZiLnwewbGuz5MGoAhcIkCQcjaTBjMgtXGURMVHC1wcQEy0J+Zlj8bKAnY1/UzDe2dbAVqfXn6wAAAABJRU5ErkJggg==');
-        background-size: 0.7rem;
-        background-position: right 0.7rem center;
-      }
+    .qty-toggle-btn:focus-visible {
+        outline: 2px solid #16a34a;
+        outline-offset: 2px;
+    }
+
+    .pdt-dlt-btn {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        border: 0;
+        background: transparent;
+        color: #ef4444;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    .pdt-dlt-icon {
+        width: 24px;
+        height: 24px;
+        pointer-events: none;
+    }
+
+    .pdt-dlt-btn:focus-visible {
+        outline: 2px solid #16a34a;
+        outline-offset: 2px;
+    }
 }
