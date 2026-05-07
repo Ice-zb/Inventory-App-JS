@@ -127,13 +127,13 @@ var ProductView = exports["default"] = /*#__PURE__*/function () {
         var deleteButton = document.createElement("button");
         deleteButton.type = "button";
         deleteButton.dataset.id = product.id;
-        deleteButton.className = "pdt-dlt-btn flex items-center justify-center";
+        deleteButton.className = "pdt-dlt-btn";
         deleteButton.setAttribute("aria-label", "Delete product");
         var svgNS = "http://www.w3.org/2000/svg";
         var deleteIcon = document.createElementNS(svgNS, "svg");
         deleteIcon.setAttribute("aria-hidden", "true");
         deleteIcon.setAttribute("focusable", "false");
-        deleteIcon.setAttribute("class", "stroke-red-500 dd:h-6 dd:w-6 ss:h-5 ss:w-5 cursor-pointer");
+        deleteIcon.setAttribute("class", "stroke-red-500 pdt-dlt-icon");
         deleteIcon.setAttribute("viewBox", "0 0 24 24");
         deleteIcon.setAttribute("stroke-width", "1.5");
         deleteIcon.setAttribute("stroke", "currentColor");
